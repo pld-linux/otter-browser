@@ -1,15 +1,22 @@
 %define	orgname	otter
 Summary:	Qt5WebKit browser
 Name:		otter-browser
-Version:	0.9.02
+Version:	0.9.03
 Release:	1
 License:	GPL v3
 Group:		X11/Applications/Networking
 Source0:	http://github.com/Emdek/otter/archive/v%{version}.tar.gz
-# Source0-md5:	64695dfb08282c305e44421c97a37d53
+# Source0-md5:	d13b34ad5a15d70590cb04e594b752f4
 URL:		http://otter-browser.org/
+BuildRequires:	Qt5Concurrent-devel >= 5.2.0
+BuildRequires:	Qt5Core-devel >= 5.2.0
+BuildRequires:	Qt5Gui-devel >= 5.2.0
+BuildRequires:	Qt5Network-devel >= 5.2.0
+BuildRequires:	Qt5PrintSupport-devel >= 5.2.0
 BuildRequires:	Qt5Script-devel >= 5.2.0
+BuildRequires:	Qt5Sql-devel >= 5.2.0
 BuildRequires:	Qt5WebKit-devel >= 5.2.0
+BuildRequires:	Qt5Widgets-devel >= 5.2.0
 BuildRequires:	automoc4
 BuildRequires:	cmake >= 2.6.2
 BuildRequires:	qt5-build
