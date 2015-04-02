@@ -1,12 +1,12 @@
 %define	orgname	otter
 Summary:	Qt5WebKit browser
 Name:		otter-browser
-Version:	0.9.03
+Version:	0.9.05
 Release:	1
 License:	GPL v3
 Group:		X11/Applications/Networking
 Source0:	http://github.com/Emdek/otter/archive/v%{version}.tar.gz
-# Source0-md5:	d13b34ad5a15d70590cb04e594b752f4
+# Source0-md5:	e24ed80e04b88811717173de77635094
 URL:		http://otter-browser.org/
 BuildRequires:	Qt5Concurrent-devel >= 5.2.0
 BuildRequires:	Qt5Core-devel >= 5.2.0
@@ -30,7 +30,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Project aiming to recreate classic Opera (12.x) UI using Qt5.
 
 %prep
-%setup -q -n %{orgname}-%{version}
+%setup -q
 
 %build
 install -d build
@@ -54,17 +54,24 @@ rm -rf $RPM_BUILD_ROOT
 %{_iconsdir}/hicolor/*/apps/otter-browser.png
 %dir %{_datadir}/otter-browser
 %dir %{_datadir}/otter-browser/locale
+%lang(ca_ES) %{_datadir}/otter-browser/locale/otter-browser_ca_ES.qm
 %lang(cs) %{_datadir}/otter-browser/locale/otter-browser_cs_CZ.qm
+%lang(da) %{_datadir}/otter-browser/locale/otter-browser_da.qm
 %lang(de) %{_datadir}/otter-browser/locale/otter-browser_de_DE.qm
+%lang(en_CA) %{_datadir}/otter-browser/locale/otter-browser_en_CA.qm
 %lang(en_GB) %{_datadir}/otter-browser/locale/otter-browser_en_GB.qm
 %lang(en_US) %{_datadir}/otter-browser/locale/otter-browser_en_US.qm
+%lang(el) %{_datadir}/otter-browser/locale/otter-browser_el.qm
 %lang(es) %{_datadir}/otter-browser/locale/otter-browser_es_ES.qm
+%lang(es_MX) %{_datadir}/otter-browser/locale/otter-browser_es_MX.qm
 %lang(et) %{_datadir}/otter-browser/locale/otter-browser_et.qm
 %lang(fi) %{_datadir}/otter-browser/locale/otter-browser_fi.qm
 %lang(fr) %{_datadir}/otter-browser/locale/otter-browser_fr_FR.qm
+%lang(fr_CA) %{_datadir}/otter-browser/locale/otter-browser_fr_CA.qm
 %lang(hu) %{_datadir}/otter-browser/locale/otter-browser_hu.qm
 %lang(id) %{_datadir}/otter-browser/locale/otter-browser_id_ID.qm
 %lang(it) %{_datadir}/otter-browser/locale/otter-browser_it_IT.qm
+%lang(ja) %{_datadir}/otter-browser/locale/otter-browser_ja_JP.qm
 %lang(ka) %{_datadir}/otter-browser/locale/otter-browser_ka_GE.qm
 %lang(lt) %{_datadir}/otter-browser/locale/otter-browser_lt.qm
 %lang(no) %{_datadir}/otter-browser/locale/otter-browser_nb_NO.qm
@@ -75,6 +82,7 @@ rm -rf $RPM_BUILD_ROOT
 %lang(ro) %{_datadir}/otter-browser/locale/otter-browser_ro.qm
 %lang(ru) %{_datadir}/otter-browser/locale/otter-browser_ru_RU.qm
 %lang(sk) %{_datadir}/otter-browser/locale/otter-browser_sk.qm
+%lang(sl_SI) %{_datadir}/otter-browser/locale/otter-browser_sl_SI.qm
 %lang(sr) %{_datadir}/otter-browser/locale/otter-browser_sr.qm
 #%lang(sr) %{_datadir}/otter-browser/locale/otter-browser_sr@Ijekavian.qm
 #%lang(sr) %{_datadir}/otter-browser/locale/otter-browser_sr@ijekavianlatin.qm
@@ -83,3 +91,4 @@ rm -rf $RPM_BUILD_ROOT
 %lang(uk) %{_datadir}/otter-browser/locale/otter-browser_uk_UA.qm
 %lang(zh_CN) %{_datadir}/otter-browser/locale/otter-browser_zh_CN.qm
 %lang(zh_TW) %{_datadir}/otter-browser/locale/otter-browser_zh_TW.qm
+%{_mandir}/man1/otter-browser.1*
