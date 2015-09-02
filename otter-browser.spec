@@ -1,12 +1,12 @@
 %define	orgname	otter
 Summary:	Qt5WebKit browser
 Name:		otter-browser
-Version:	0.9.06
+Version:	0.9.07
 Release:	1
 License:	GPL v3
 Group:		X11/Applications/Networking
 Source0:	http://github.com/Emdek/otter/archive/v%{version}.tar.gz?/%{name}-%{version}.tar.gz
-# Source0-md5:	8c13ed4c4080923903f3ffe240264e5b
+# Source0-md5:	82198cedb0d817932d556b80c2676040
 URL:		http://otter-browser.org/
 BuildRequires:	Qt5Concurrent-devel >= 5.2.0
 BuildRequires:	Qt5Core-devel >= 5.2.0
@@ -67,7 +67,7 @@ rm -rf $RPM_BUILD_ROOT
 %lang(et) %{_datadir}/otter-browser/locale/otter-browser_et.qm
 %lang(fi) %{_datadir}/otter-browser/locale/otter-browser_fi.qm
 %lang(fr) %{_datadir}/otter-browser/locale/otter-browser_fr_FR.qm
-%lang(fr_CA) %{_datadir}/otter-browser/locale/otter-browser_fr_CA.qm
+#%lang(fr_CA) %{_datadir}/otter-browser/locale/otter-browser_fr_CA.qm
 %lang(hu) %{_datadir}/otter-browser/locale/otter-browser_hu.qm
 %lang(hr) %{_datadir}/otter-browser/locale/otter-browser_hr_HR.qm
 %lang(id) %{_datadir}/otter-browser/locale/otter-browser_id_ID.qm
