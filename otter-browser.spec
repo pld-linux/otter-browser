@@ -10,20 +10,20 @@ Source0:	http://github.com/Emdek/otter/archive/v%{version}.tar.gz?/%{name}-%{ver
 URL:		http://otter-browser.org/
 BuildRequires:	Qt5Concurrent-devel >= 5.2.0
 BuildRequires:	Qt5Core-devel >= 5.2.0
+BuildRequires:	Qt5DBus-devel >= 5.2.0
 BuildRequires:	Qt5Gui-devel >= 5.2.0
+BuildRequires:	Qt5Multimedia-devel >= 5.2.0
 BuildRequires:	Qt5Network-devel >= 5.2.0
 BuildRequires:	Qt5PrintSupport-devel >= 5.2.0
 BuildRequires:	Qt5Script-devel >= 5.2.0
 BuildRequires:	Qt5Sql-devel >= 5.2.0
 BuildRequires:	Qt5WebKit-devel >= 5.2.0
 BuildRequires:	Qt5Widgets-devel >= 5.2.0
-BuildRequires:	automoc4
 BuildRequires:	cmake >= 2.6.2
+BuildRequires:	libstdc++-devel
 BuildRequires:	qt5-build
-BuildRequires:	qt5-linguist
 BuildRequires:	qt5-qmake >= 4.7.0
 BuildRequires:	tar >= 1:1.22
-BuildRequires:	xz
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
