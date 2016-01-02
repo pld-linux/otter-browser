@@ -1,12 +1,12 @@
 %define		qtver	5.2.0
 Summary:	Browser aiming to recreate classic Opera (12.x) UI using Qt5
 Name:		otter-browser
-Version:	0.9.08
+Version:	0.9.09
 Release:	1
 License:	GPL v3
 Group:		X11/Applications/Networking
 Source0:	https://github.com/OtterBrowser/otter-browser/archive/v%{version}/%{name}-%{version}.tar.gz
-# Source0-md5:	bcfacc650049ea4ed75537119589e852
+# Source0-md5:	211ceec02c5e34c9e17a287217a58311
 URL:		http://otter-browser.org/
 BuildRequires:	Qt5Concurrent-devel >= %{qtver}
 BuildRequires:	Qt5Core-devel >= %{qtver}
@@ -21,6 +21,7 @@ BuildRequires:	Qt5WebKit-devel >= %{qtver}
 BuildRequires:	Qt5Widgets-devel >= %{qtver}
 BuildRequires:	Qt5XmlPatterns-devel >= %{qtver}
 BuildRequires:	cmake >= 2.6.2
+BuildRequires:	kf5-sonnet-devel
 BuildRequires:	libstdc++-devel
 BuildRequires:	qt5-build
 BuildRequires:	qt5-qmake >= 4.7.0
