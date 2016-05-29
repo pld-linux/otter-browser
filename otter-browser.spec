@@ -2,11 +2,12 @@
 Summary:	Browser aiming to recreate classic Opera (12.x) UI using Qt5
 Name:		otter-browser
 Version:	0.9.10
-Release:	1
+Release:	2
 License:	GPL v3
 Group:		X11/Applications/Networking
 Source0:	https://github.com/OtterBrowser/otter-browser/archive/v%{version}/%{name}-%{version}.tar.gz
 # Source0-md5:	196b1adeab38d7786b49f94df203f1fd
+Patch0:		findhunspell-1.4.patch
 URL:		http://otter-browser.org/
 BuildRequires:	Qt5Concurrent-devel >= %{qtver}
 BuildRequires:	Qt5Core-devel >= %{qtver}
@@ -36,6 +37,7 @@ Otter Browser aims to recreate the best aspects of the classic Opera
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 install -d build
