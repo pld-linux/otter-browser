@@ -2,7 +2,7 @@
 Summary:	Browser aiming to recreate classic Opera (12.x) UI using Qt5
 Name:		otter-browser
 Version:	0.9.11
-Release:	1
+Release:	2
 License:	GPL v3
 Group:		X11/Applications/Networking
 Source0:	https://github.com/OtterBrowser/otter-browser/archive/v%{version}/%{name}-%{version}.tar.gz
