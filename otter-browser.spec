@@ -18,6 +18,7 @@ BuildRequires:	Qt5Network-devel >= %{qtver}
 BuildRequires:	Qt5PrintSupport-devel >= %{qtver}
 BuildRequires:	Qt5Script-devel >= %{qtver}
 BuildRequires:	Qt5Sql-devel >= %{qtver}
+BuildRequires:	Qt5WebEngine-devel >= %{qtver}
 BuildRequires:	Qt5WebKit-devel >= %{qtver}
 BuildRequires:	Qt5Widgets-devel >= %{qtver}
 BuildRequires:	Qt5XmlPatterns-devel >= %{qtver}
