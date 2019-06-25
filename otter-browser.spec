@@ -3,7 +3,7 @@ Summary:	Browser aiming to recreate classic Opera (12.x) UI using Qt5
 Summary(pl.UTF-8):	Przeglądarka, której celem jest odtworzenie klasycznego interfejsu Opery (12.x) przy użyciu Qt5
 Name:		otter-browser
 Version:	1.0.01
-Release:	2
+Release:	3
 License:	GPL v3
 Group:		X11/Applications/Networking
 Source0:	https://github.com/OtterBrowser/otter-browser/archive/v%{version}/%{name}-%{version}.tar.gz
