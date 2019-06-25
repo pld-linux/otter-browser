@@ -31,6 +31,7 @@ BuildRequires:	qt5-build
 BuildRequires:	qt5-qmake >= 4.7.0
 BuildRequires:	rpmbuild(find_lang) >= 1.37
 BuildRequires:	tar >= 1:1.22
+Requires:	hicolor-icon-theme
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -62,6 +63,12 @@ rm -rf $RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
+
+%post
+%update_icon_cache hicolor
+
+%postun
+%update_icon_cache hicolor
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
