@@ -8,6 +8,7 @@ License:	GPL v3
 Group:		X11/Applications/Networking
 Source0:	https://github.com/OtterBrowser/otter-browser/archive/v%{version}/%{name}-%{version}.tar.gz
 # Source0-md5:	99601d0b230956dc542a04f0df912626
+Patch0:		%{name}-hunspell-1.7.patch
 URL:		http://otter-browser.org/
 BuildRequires:	Qt5Concurrent-devel >= %{qtver}
 BuildRequires:	Qt5Core-devel >= %{qtver}
@@ -23,7 +24,7 @@ BuildRequires:	Qt5WebKit-devel >= %{qtver}
 BuildRequires:	Qt5Widgets-devel >= %{qtver}
 BuildRequires:	Qt5XmlPatterns-devel >= %{qtver}
 BuildRequires:	cmake >= 2.6.2
-BuildRequires:	hunspell-devel
+BuildRequires:	hunspell-devel >= 1.5.0
 BuildRequires:	kf5-sonnet-devel
 BuildRequires:	libstdc++-devel
 BuildRequires:	qt5-build
@@ -43,6 +44,7 @@ przy użyciu Qt5.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 install -d build

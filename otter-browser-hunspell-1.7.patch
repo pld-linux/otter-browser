@@ -1,0 +1,12 @@
+diff -urN otter-browser-1.0.01.orig/cmake/FindHunspell.cmake otter-browser-1.0.01/cmake/FindHunspell.cmake
+--- otter-browser-1.0.01.orig/cmake/FindHunspell.cmake	2019-06-25 23:53:03.089478575 +0200
++++ otter-browser-1.0.01/cmake/FindHunspell.cmake	2019-06-25 23:53:16.999434322 +0200
+@@ -12,7 +12,7 @@
+ ENDIF (HUNSPELL_INCLUDE_DIR AND HUNSPELL_LIBRARIES)
+ 
+ FIND_PATH(HUNSPELL_INCLUDE_DIR hunspell/hunspell.hxx)
+-FIND_LIBRARY(HUNSPELL_LIBRARIES NAMES hunspell-1.6 hunspell-1.5 hunspell)
++FIND_LIBRARY(HUNSPELL_LIBRARIES NAMES hunspell-1.7 hunspell-1.6 hunspell-1.5 hunspell)
+ 
+ # handle the QUIETLY and REQUIRED arguments and set HUNSPELL_FOUND to TRUE if
+ # all listed variables are TRUE
