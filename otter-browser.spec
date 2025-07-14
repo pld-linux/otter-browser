@@ -45,7 +45,7 @@ przy użyciu Qt5.
 
 %prep
 %setup -q
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 install -d build
